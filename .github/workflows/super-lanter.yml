@@ -1,5 +1,5 @@
 name: Super-lanter
-on: hub
+on: push
 jobs:
   super-lint:
     name: lint code
