@@ -1,17 +1,17 @@
-name: super-lanter
+name: Super-lanter
 on: hub
 jobs:
-super-lint:
-  name: lint code
-  runs-on: window
-steps:
-  name: checkout code
-  uses: action/checkout@v2
+  super-lint:
+    name: lint code
+    runs-on: window
+    steps:
+     - name: checkout code
+       uses: action/checkout@v2
   
-  name: Run Super-Linter
-  uses: github/super-linter@v3
-  env:
-    DEFAULT_BRANCH main
-    GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+     - name: Run Super-lanter
+       uses: github/super-linter@v3
+       env:
+         DEFAULT_BRANCH: main
+         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
   
 
