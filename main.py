@@ -18,7 +18,7 @@ appConfigData=appConfig.get_config()
 defaultDownloadFolder = os.path.expanduser('~')+'/Downloads/'
 appAction = input("This web scraping process will automatically login to Brevo site on chrome browser, you need manual interaction during captcha verification and logs filters selection. Do you want to proceed(y/n)?:")
 if appAction=='y':
-    browser = webdriver.Chrome()
+   browser = webdriver.Chrome()
     browser.get(appConfigData['targetURL'])
     user = browser.find_element(By.ID, "email")
     pwd = browser.find_element(By.ID, "password")
